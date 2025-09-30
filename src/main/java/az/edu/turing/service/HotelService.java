@@ -14,9 +14,10 @@ public class HotelService {
         this.network = network;
     }
 
-    public void add(Hotel hotel) {
-        network.getHotels().add(hotel);
+    public boolean add(Hotel hotel) {
+        boolean added=network.getHotels().add(hotel);
         System.out.println(hotel.getName() + " has been added to the network");
+        return added;
     }
 
     public Hotel findById(Long id) {
