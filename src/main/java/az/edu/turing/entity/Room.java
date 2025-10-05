@@ -13,6 +13,7 @@ public class Room {
         this.roomType = roomType;
         this.roomPrice = roomNumberPrice;
     }
+
     public String getRoomNumber() {
         return roomNumber;
     }
@@ -36,17 +37,4 @@ public class Room {
     public void setRoomNumberPrice(double roomNumberPrice) {
         this.roomPrice = roomNumberPrice;
     }
-
-
-
-
-    @Override
-    public String toString() {
-        return "Room{" +
-                "roomNumber='" + roomNumber + '\'' +
-                ", roomType='" + roomType + '\'' +
-                ", roomNumberPrice='" + roomPrice + '\'' +
-                '}';
-    }
 }
-
